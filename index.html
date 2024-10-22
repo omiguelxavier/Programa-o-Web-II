@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas - UNIALFA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Adicionando o logotipo da UNIALFA -->
+        <div class="logo">
+            <img src="logo unialfa.jpg" alt="Logo UNIALFA">
+        </div>
+        <h1>Lista de Tarefas</h1>
+        <form id="formTarefa">
+            <div>
+                <input type="text" id="inputTarefa" placeholder="Digite sua tarefa" required>
+                <select id="prioridadeTarefa">
+                    <option value="baixa">Baixa</option>
+                    <option value="media">Média</option>
+                    <option value="alta">Alta</option>
+                </select>
+                <input type="date" id="dataTarefa" required> <!-- Campo para a data -->
+            </div>
+            <button type="submit">Adicionar Tarefa</button>
+        </form>
+        
+        <h2>Tarefas Pendentes</h2>
+        <ul id="listaTarefas"></ul>
+
+        <h2>Tarefas Concluídas</h2>
+        <ul id="tarefasConcluidas"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
